@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="EMI Calculator Suite" verbose="1" parallel="false">
+
+    <!-- Run Car Loan Calculator Tests -->
+    <test name="CarLoanTests">
+        <classes>
+            <class name="tests.CarLoanTest" />
+        </classes>
+    </test>
+
+    <!-- Run Home Loan Calculator Tests -->
+    <test name="HomeLoanTests">
+        <classes>
+            <class name="tests.HomeLoanTest" />
+        </classes>
+    </test>
+
+    <!-- Run General Loan Calculator Tests -->
+    <test name="LoanCalculatorTests">
+        <classes>
+            <class name="tests.LoanCalculatorTest" />
+        </classes>
+    </test>
+
+</suite>

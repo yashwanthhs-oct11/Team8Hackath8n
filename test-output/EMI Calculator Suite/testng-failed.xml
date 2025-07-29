@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [EMI Calculator Suite]">
+  <test thread-count="2" parallel="tests" name="HomeLoanTests(failed)">
+    <classes>
+      <class name="tests.HomeLoanTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="extractEMIDataToExcel"/>
+        </methods>
+      </class> <!-- tests.HomeLoanTest -->
+    </classes>
+  </test> <!-- HomeLoanTests(failed) -->
+</suite> <!-- Failed suite [EMI Calculator Suite] -->
