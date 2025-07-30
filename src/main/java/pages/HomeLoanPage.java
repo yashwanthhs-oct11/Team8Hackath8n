@@ -11,7 +11,7 @@ public class HomeLoanPage {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
-
+  //bhargavi changes
     @FindBy(xpath = "//*[@id='menu-item-dropdown-2696']")
     WebElement emiCalculatorDropdown;
 
