@@ -5,22 +5,10 @@
     <!-- Run Car Loan Calculator Tests -->
     <test name="CarLoanTests">
         <classes>
-            <class name="tests.CarLoanTest" />
+            <class name="tests.BaseTest" />
         </classes>
     </test>
 
-    <!-- Run Home Loan Calculator Tests -->
-    <test name="HomeLoanTests">
-        <classes>
-            <class name="tests.HomeLoanTest" />
-        </classes>
-    </test>
-
-    <!-- Run General Loan Calculator Tests -->
-    <test name="LoanCalculatorTests">
-        <classes>
-            <class name="tests.LoanCalculatorTest" />
-        </classes>
-    </test>
+    
 
 </suite>

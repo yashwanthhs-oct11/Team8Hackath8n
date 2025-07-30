@@ -1,35 +1,50 @@
 package utils;
 
-import java.io.FileOutputStream;
-import java.util.List;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+
+import java.io.FileOutputStream;
+import java.util.List;
 
 public class ExcelUtil {
 
-    /* 
-     * Writes the contents of a table (represented as a list of WebElement rows) 
-     * into an Excel file with the given file name.
-     */
-    public static void writeTableToExcel(List<WebElement> rows, String fileName) throws Exception {
-        Workbook workbook = new XSSFWorkbook();
+
+    // Method to extract EMI table data to Excel
+    public static void extractDataToExcel(List<WebElement> rows, String filePath) throws Exception {
+        // Create a new Excel file and sheet
+        FileOutputStream file = new FileOutputStream(filePath);
+        XSSFWorkbook workbook = new XSSFWorkbook();
         Sheet sheet = workbook.createSheet("EMI Data");
 
         int rowNum = 0;
         for (WebElement row : rows) {
+            // Get all table data cells (td)
+            List<WebElement> cells = row.findElements(By.tagName("td"));
+
+            // Skip rows without any content
+            boolean rowHasContent = cells.stream().anyMatch(cell -> !cell.getText().trim().isEmpty());
+            if (!rowHasContent) continue;
+
             Row excelRow = sheet.createRow(rowNum++);
-            List<WebElement> cells = row.findElements(org.openqa.selenium.By.tagName("td"));
             int cellNum = 0;
+
             for (WebElement cell : cells) {
+                String cellText = cell.getText().trim();
+
+                if (cellText.isEmpty()) continue;
+
+                // Write the cell data to Excel
                 Cell excelCell = excelRow.createCell(cellNum++);
-                excelCell.setCellValue(cell.getText());
+                excelCell.setCellValue(cellText);
+
             }
         }
 
-        FileOutputStream out = new FileOutputStream(fileName);
-        workbook.write(out);
-        out.close();
+        // Write data to the Excel file
+        workbook.write(file);
+        file.close();
         workbook.close();
     }
 }
