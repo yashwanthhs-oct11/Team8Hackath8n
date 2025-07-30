@@ -55,7 +55,13 @@ public class HomeLoanPage {
 
     @FindBy(className = "noextras")
     WebElement dataTable;
-
+    
+    @FindBy(id="homeinsurance")
+    WebElement HomeInsurance;
+    
+    @FindBy(id="maintenanceexpenses")
+    WebElement MaintenanceExpenses;
+    
     /* 
      * Navigates to the Home Loan Calculator page using the dropdown menu.
      */
@@ -77,7 +83,9 @@ public class HomeLoanPage {
         clearAndType(loanFees, "12000");
         clearAndType(oneTimeExpenses, "8000");
         clearAndType(propertyTax, "6000");
-        propertyTax.sendKeys(Keys.ENTER);
+        clearAndType(HomeInsurance,"0.07");
+        clearAndType(MaintenanceExpenses,"4000");
+        MaintenanceExpenses.sendKeys(Keys.ENTER);
     }
 
     /* 

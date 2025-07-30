@@ -13608,3 +13608,9 @@ Session ID: 8e81a55d1036c54ec2dc0ae4fd44dec9
 2025-07-30 12:21:34 INFO  BaseTest:103 - ✅ EMI Calculator UI validation completed successfully.
 2025-07-30 12:21:36 INFO  BaseTest:125 - ✅ Loan Amount Calculator UI validation completed successfully.
 2025-07-30 12:21:37 INFO  BaseTest:143 - ✅ Loan Tenure Calculator UI validation completed successfully.
+2025-07-30 16:12:17 INFO  BaseTest:69 - Navigated to Home Loan Calculator page.
+2025-07-30 16:12:20 INFO  BaseTest:72 - Filled Home Loan form with valid values.
+2025-07-30 16:13:19 INFO  BaseTest:78 - ✅ EMI data extracted from Home Loan calculator and saved to Excel successfully.
+2025-07-30 16:13:25 INFO  BaseTest:103 - ✅ EMI Calculator UI validation completed successfully.
+2025-07-30 16:13:27 INFO  BaseTest:125 - ✅ Loan Amount Calculator UI validation completed successfully.
+2025-07-30 16:13:29 INFO  BaseTest:143 - ✅ Loan Tenure Calculator UI validation completed successfully.

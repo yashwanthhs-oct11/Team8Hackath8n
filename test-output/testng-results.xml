@@ -2,36 +2,36 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-30T12:20:25 IST" name="EMI Calculator Suite" finished-at="2025-07-30T12:21:40 IST" duration-ms="75152">
+  <suite started-at="2025-07-30T16:11:58 IST" name="EMI Calculator Suite" finished-at="2025-07-30T16:13:33 IST" duration-ms="95846">
     <groups>
     </groups>
-    <test started-at="2025-07-30T12:20:25 IST" name="CarLoanTests" finished-at="2025-07-30T12:21:40 IST" duration-ms="75152">
+    <test started-at="2025-07-30T16:11:58 IST" name="CarLoanTests" finished-at="2025-07-30T16:13:33 IST" duration-ms="95846">
       <class name="tests.BaseTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BaseTest@66746f57]" started-at="2025-07-30T12:20:25 IST" name="setUp" finished-at="2025-07-30T12:20:33 IST" duration-ms="8189" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BaseTest@66746f57]" started-at="2025-07-30T16:11:58 IST" name="setUp" finished-at="2025-07-30T16:12:10 IST" duration-ms="12209" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validateCarLoanEMI()[pri:1, instance:tests.BaseTest@66746f57]" started-at="2025-07-30T12:20:33 IST" name="validateCarLoanEMI" finished-at="2025-07-30T12:20:34 IST" duration-ms="885" status="PASS">
+        <test-method signature="validateCarLoanEMI()[pri:1, instance:tests.BaseTest@66746f57]" started-at="2025-07-30T16:12:10 IST" name="validateCarLoanEMI" finished-at="2025-07-30T16:12:12 IST" duration-ms="2303" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateCarLoanEMI -->
-        <test-method signature="extractEMIDataToExcel()[pri:2, instance:tests.BaseTest@66746f57]" started-at="2025-07-30T12:20:34 IST" name="extractEMIDataToExcel" finished-at="2025-07-30T12:21:29 IST" duration-ms="54522" status="PASS">
+        <test-method signature="extractEMIDataToExcel()[pri:2, instance:tests.BaseTest@66746f57]" started-at="2025-07-30T16:12:12 IST" name="extractEMIDataToExcel" finished-at="2025-07-30T16:13:19 IST" duration-ms="66597" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extractEMIDataToExcel -->
-        <test-method signature="validateEMICalculatorUI()[pri:3, instance:tests.BaseTest@66746f57]" started-at="2025-07-30T12:21:29 IST" name="validateEMICalculatorUI" finished-at="2025-07-30T12:21:34 IST" duration-ms="5407" status="PASS">
+        <test-method signature="validateEMICalculatorUI()[pri:3, instance:tests.BaseTest@66746f57]" started-at="2025-07-30T16:13:19 IST" name="validateEMICalculatorUI" finished-at="2025-07-30T16:13:25 IST" duration-ms="6398" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateEMICalculatorUI -->
-        <test-method signature="validateLoanAmountCalculatorUI()[pri:4, instance:tests.BaseTest@66746f57]" started-at="2025-07-30T12:21:34 IST" name="validateLoanAmountCalculatorUI" finished-at="2025-07-30T12:21:36 IST" duration-ms="1444" status="PASS">
+        <test-method signature="validateLoanAmountCalculatorUI()[pri:4, instance:tests.BaseTest@66746f57]" started-at="2025-07-30T16:13:25 IST" name="validateLoanAmountCalculatorUI" finished-at="2025-07-30T16:13:27 IST" duration-ms="1939" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateLoanAmountCalculatorUI -->
-        <test-method signature="validateLoanTenureCalculatorUI()[pri:5, instance:tests.BaseTest@66746f57]" started-at="2025-07-30T12:21:36 IST" name="validateLoanTenureCalculatorUI" finished-at="2025-07-30T12:21:37 IST" duration-ms="1113" status="PASS">
+        <test-method signature="validateLoanTenureCalculatorUI()[pri:5, instance:tests.BaseTest@66746f57]" started-at="2025-07-30T16:13:27 IST" name="validateLoanTenureCalculatorUI" finished-at="2025-07-30T16:13:29 IST" duration-ms="1525" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateLoanTenureCalculatorUI -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BaseTest@66746f57]" started-at="2025-07-30T12:21:37 IST" name="tearDown" finished-at="2025-07-30T12:21:40 IST" duration-ms="3316" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BaseTest@66746f57]" started-at="2025-07-30T16:13:29 IST" name="tearDown" finished-at="2025-07-30T16:13:33 IST" duration-ms="4545" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
